@@ -22,8 +22,7 @@ SmartPath AI is a personalized learning path generator and assessment platform p
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/smartpath-ai.git
-   cd smartpath-ai
+   git clone https://github.com/hemanthumashankar0511/Smartpath-ai.git
    ```
 
 2. Create and activate a virtual environment:
@@ -44,7 +43,7 @@ SmartPath AI is a personalized learning path generator and assessment platform p
    Create a `.env` file in the root directory with:
    ```plaintext
    GEMINI_API_KEY=your_gemini_api_key
-   YOUTUBE_API_KEY=your_youtube_api_key  # Optional, for enhanced video recommendations
+   YOUTUBE_API_KEY=your_youtube_api_key  
    ```
 
 5. Pull required AI model:

@@ -1,0 +1,39 @@
+2025-05-29 12:53:59 INFO: User 4 ACTION: Note Saved | Details: path_id=8, milestone=HTML & CSS
+2025-05-29 12:54:06 INFO: User 4 ACTION: Note Saved | Details: path_id=8, milestone=HTML & CSS
+2025-05-29 12:54:31 INFO: User 4 ACTION: Progress Saved | Details: completed=['Storage & Databases', 'Project: Deploy to Cloud', 'HTML & CSS', 'JavaScript Basics']
+2025-05-31 23:16:00 INFO: User 4 ACTION: Assessment Submitted | Details: domain=cybersecurity, skill=Beginner
+2025-05-31 23:16:10 INFO: User 4 ACTION: Learning Path Generated | Details: title=Cybersecurity Path
+2025-05-31 23:17:10 INFO: User 4 ACTION: Progress Saved | Details: completed=['Security Basics']
+2025-06-01 00:46:14 INFO: User 6 ACTION: Assessment Submitted | Details: domain=devops, skill=Beginner
+2025-06-01 00:46:56 INFO: User 6 ACTION: Learning Path Generated | Details: title=DevOps Path
+2025-06-01 00:48:21 INFO: User 6 ACTION: Progress Saved | Details: completed=['Project: DevOps Pipeline']
+2025-06-01 00:59:36 INFO: User 6 ACTION: Assessment Submitted | Details: domain=web_dev, skill=Beginner
+2025-06-01 01:00:19 INFO: User 6 ACTION: Assessment Submitted | Details: domain=machine_learning, skill=Beginner
+2025-06-01 01:06:47 INFO: User 6 ACTION: Assessment Submitted | Details: domain=cloud_computing, skill=Beginner
+2025-06-01 01:13:29 INFO: User 6 ACTION: Learning Path Generated | Details: title=AI Fundamentals Learning Path
+2025-06-01 16:39:27 INFO: User 1 ACTION: Learning Path Generated | Details: title=Ai_Fundamentals Learning Path
+2025-06-01 16:44:41 INFO: User 1 ACTION: Learning Path Generated | Details: title=Python Basics Mastery
+2025-06-01 22:59:45 ERROR: User 7 ERROR: Learning Path Generation Failed | Details: Ollama call failed with status code 500. Details: {"error":"llama runner process has terminated: cudaMalloc failed: out of memory"}
+2025-06-01 23:03:46 ERROR: User 7 ERROR: Learning Path Generation Failed | Details: Ollama call failed with status code 500. Details: {"error":"llama runner process has terminated: GGML_ASSERT(ctx-\u003emem_buffer != NULL) failed"}
+2025-06-01 23:05:53 INFO: User 7 ACTION: Assessment Submitted | Details: domain=python, skill=Intermediate
+2025-06-01 23:06:34 INFO: User 7 ACTION: Learning Path Generated | Details: title=Python Learning Path
+2025-06-01 23:09:43 INFO: User 7 ACTION: Assessment Submitted | Details: domain=python, skill=Beginner
+2025-06-01 23:14:19 INFO: User 7 ACTION: Assessment Submitted | Details: domain=python, skill=Beginner
+2025-06-01 23:19:42 ERROR: User 7 ERROR: Learning Path Generation Failed | Details: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llama3.1:8b`.
+2025-06-01 23:22:20 INFO: User 7 ACTION: Learning Path Generated | Details: title=Machine Learning Mastery
+2025-06-01 23:24:03 INFO: User 7 ACTION: Progress Saved | Details: completed=[]
+2025-06-01 23:27:18 INFO: User 7 ACTION: Progress Saved | Details: completed=[]
+2025-06-02 23:38:47 INFO: User 7 ACTION: Assessment Submitted | Details: domain=cloud_computing, skill=Beginner
+2025-06-02 23:39:07 INFO: User 7 ACTION: Learning Path Generated | Details: title=Cloud Computing Learning Path
+2025-06-02 23:46:49 INFO: User 1 ACTION: Learning Path Generated | Details: title=Database Fundamentals Review
+2025-06-02 23:48:24 INFO: User 1 ACTION: Progress Saved | Details: completed=['Understanding Foreign Keys']
+2025-06-03 18:21:33 INFO: User 1 ACTION: Learning Path Generated | Details: title=Improving Machine Learning Fundamentals
+2025-06-03 18:37:37 INFO: User 6 ACTION: Learning Path Generated | Details: title=DevOps Learning Path
+2025-06-03 18:54:13 INFO: User 8 ACTION: Assessment Submitted | Details: domain=web_dev, skill=Beginner
+2025-06-03 18:54:28 INFO: User 8 ACTION: Learning Path Generated | Details: title=Web Development Learning Path
+2025-06-03 18:54:45 INFO: User 8 ACTION: Note Saved | Details: path_id=20, milestone=HTML Basics Review
+2025-06-03 18:55:18 INFO: User 8 ACTION: Progress Saved | Details: completed=['HTML Basics Review']
+2025-06-03 22:47:01 INFO: User 7 ACTION: Learning Path Generated | Details: title=Cloud Computing Learning Path
+2025-06-04 10:24:00 INFO: User 4 ACTION: Learning Path Generated | Details: title=Database Fundamentals
+2025-06-04 11:08:14 INFO: User 6 ACTION: Learning Path Generated | Details: title=Data Science Mastery
+2025-06-04 11:08:56 INFO: User 6 ACTION: Progress Saved | Details: completed=['Review of Basics']

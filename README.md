@@ -1,66 +1,119 @@
 # SmartPath AI
 
-SmartPath AI is a personalized, AI-powered learning path generator designed to help users assess their current knowledge, receive tailored curricula, and track their learning progress. The application leverages advanced language models to provide dynamic learning experiences based on user assessments.
+SmartPath AI is a personalized learning path generator and assessment platform powered by AI. The application uses the Llama 3.2 language model to provide intelligent assessments, generate customized learning paths, and offer interactive AI assistance for various technical domains.
 
 ## Features
 
-- **Skill Assessment**: Users can take assessments to evaluate their knowledge in various domains.
-- **Personalized Learning Paths**: Generate custom curricula based on assessment results and user preferences.
-- **Progress Tracking**: Monitor learning progress and achievements.
-- **AI Agent**: Interact with a GenAI-powered assistant for questions and multimodal Q&A.
+- **Domain-Specific Assessments**: Pre-built assessments for multiple domains including Python, Data Science, Web Development, Machine Learning, and more
+- **AI-Powered Learning Paths**: Customized curriculum generation based on assessment results
+- **Progress Tracking**: Monitor your learning journey with milestone completion tracking
+- **Resource Integration**: Curated YouTube videos and PDF resources for each learning milestone
+- **Interactive AI Agent**: Get explanations and answers using Llama 3.2
+- **User Profiles**: Track multiple learning paths and progress across different domains
 
 ## Prerequisites
 
-Before running the project, ensure you have the following installed:
-
 - Python 3.7 or higher
-- Streamlit
-- Required libraries (see `requirements.txt`)
+- [Ollama](https://ollama.ai/) installed and running
+- Google Chrome or Firefox (recommended browsers)
+- 8GB RAM minimum (16GB recommended for optimal performance)
 
 ## Installation
 
 1. Clone the repository:
-
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/yourusername/smartpath-ai.git
+   cd smartpath-ai
    ```
 
-2. Install the required packages:
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   # On Windows:
+   .\venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
 
+3. Install required packages:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Set up environment variables:
-
-   Create a `.env` file in the root directory and add your API keys:
-
+4. Set up environment variables:
+   Create a `.env` file in the root directory with:
    ```plaintext
-   GEMINI_API_KEY=<your-gemini-api-key>
+   GEMINI_API_KEY=your_gemini_api_key
+   YOUTUBE_API_KEY=your_youtube_api_key  # Optional, for enhanced video recommendations
    ```
 
-## Running the Project
+5. Pull required AI model:
+   ```bash
+   # Install the language model
+   ollama pull llama3.2:3b
+   ```
 
-To run the application, use the following command:
+## Running the Application
 
-```bash
-streamlit run app.py
-```
+1. Ensure Ollama is running in the background:
+   ```bash
+   # On Windows, start Ollama from the installed application
+   # On macOS/Linux:
+   ollama serve
+   ```
 
-This will start the Streamlit server, and you can access the application in your web browser at `http://localhost:8501`.
+2. Start the Streamlit application:
+   ```bash
+   streamlit run app.py
+   ```
 
-## Pulling the Model
+3. Open your browser and navigate to `http://localhost:8501`
 
-Make sure to pull the necessary models before using the application. You can do this by running the following command in your terminal:
+## Usage
 
-```bash
-# Example command to pull the model
-# Replace <model-name> with the actual model you need
-llama pull <model-name>
-```
+1. Register/Login with your email
+2. Select a domain and take the assessment
+3. View your results and AI-generated explanations
+4. Generate a personalized learning path
+5. Track your progress through milestones
+6. Use the AI agent for additional help and explanations
+
+## Troubleshooting
+
+### Common Issues
+
+1. **MemoryError or Ollama Errors**:
+   - Ensure you have enough RAM available
+   - Try restarting Ollama service
+   - Consider using a smaller language model if issues persist
+
+2. **Model Not Found**:
+   ```bash
+   # Re-pull the model
+   ollama pull llama3.2:3b
+   ```
+
+3. **API Key Issues**:
+   - Verify your API keys in the `.env` file
+   - Ensure the file is in the root directory
+   - Check for any whitespace in the keys
+
+## Documentation Links
+
+- [Ollama Documentation](https://github.com/ollama/ollama)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Google Gemini API](https://ai.google.dev/)
+- [YouTube Data API](https://developers.google.com/youtube/v3)
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
 
